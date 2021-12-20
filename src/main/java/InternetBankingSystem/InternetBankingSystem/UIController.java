@@ -310,6 +310,7 @@ public class UIController implements Initializable {
 		if (nameField.getText().equals("") || ageField.getText().equals("") || genderComboBox.getPromptText().equals("")
 				|| addressField.getText().equals("") || phoneNumberField.getText().equals("")
 				|| passwordField.getText().equals("")) {
+			profileUpdatedMessage.setVisible(false);
 			invalidMessage.setVisible(false);
 			emptyMessage.setVisible(true);
 		}
@@ -320,6 +321,7 @@ public class UIController implements Initializable {
 					Integer.parseInt(ageField.getText()));
 
 			if (!updated) {
+				profileUpdatedMessage.setVisible(false);
 				emptyMessage.setVisible(false);
 				invalidMessage.setVisible(true);
 			}
