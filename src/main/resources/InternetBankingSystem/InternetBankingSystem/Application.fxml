@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InternetBankingSystem.InternetBankingSystem.UIController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="232.0" style="-fx-background-color: #17202a;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="UNIVERSITY" layoutX="93.0" layoutY="101.0" size="40" />
+            <Text fill="WHITE" layoutX="50.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Internet Banking">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="50.0" layoutY="227.0" size="20" />
+            <JFXButton layoutX="65.0" layoutY="202.0" onAction="#displayDashboard" prefHeight="33.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="59.0" layoutY="433.0" onAction="#showLoginPage" prefHeight="37.0" prefWidth="113.0" style="-fx-background-color: transparent;" text="Sign Out" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="50.0" layoutY="262.0" size="20" />
+            <JFXButton layoutX="65.0" layoutY="237.0" onAction="#displayEditProfile" prefHeight="33.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Edit Profile" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="69.0" layoutY="272.0" onAction="#displaySettings" prefHeight="32.0" prefWidth="79.0" style="-fx-background-color: transparent;" text="Settings" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="COG" layoutX="50.0" layoutY="296.0" size="20" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="contentArea" prefHeight="500.0" prefWidth="470.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InternetBankingSystem.InternetBankingSystem.UIController">
+   <children>
+      <Text fill="#17202a" layoutX="38.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Balance">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="displayBalanceText" fill="#17202a" layoutX="67.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50,000" wrappingWidth="260.79248046875">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#17202a" layoutX="38.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs." wrappingWidth="28.79248046875">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="38.0" layoutY="187.0" mnemonicParsing="false" onAction="#processBankTransfer" prefHeight="44.0" prefWidth="192.0" style="-fx-background-color: #17202A;" text="Bank Transfer" textFill="#e4e4e4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="241.0" layoutY="187.0" mnemonicParsing="false" onAction="#processEStatement" prefHeight="44.0" prefWidth="192.0" style="-fx-background-color: #17202A;" text="E-Statement" textFill="#e4e4e4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="38.0" layoutY="249.0" mnemonicParsing="false" onAction="#processCheckbook" prefHeight="44.0" prefWidth="192.0" style="-fx-background-color: #17202A;" text="CheckBook" textFill="#e4e4e4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="241.0" layoutY="249.0" mnemonicParsing="false" onAction="#processEasypaisa" prefHeight="44.0" prefWidth="192.0" style="-fx-background-color: #17202A;" text="Easypaisa" textFill="#e4e4e4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="38.0" layoutY="309.0" mnemonicParsing="false" onAction="#processElecticityBill" prefHeight="44.0" prefWidth="192.0" style="-fx-background-color: #17202A;" text="Electricity Bill" textFill="#e4e4e4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="241.0" layoutY="309.0" mnemonicParsing="false" onAction="#processGasBill" prefHeight="44.0" prefWidth="192.0" style="-fx-background-color: #17202A;" text="Gas Bill" textFill="#e4e4e4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text fx:id="displayNameText" fill="#17202a" layoutX="38.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Muhammad Shaheer">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
